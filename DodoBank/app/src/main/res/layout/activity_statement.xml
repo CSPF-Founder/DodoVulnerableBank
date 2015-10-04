@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.cysecurity.example.dodobank.Statement"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/customer_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:background="#ff8300"
+        android:visibility="invisible" />
+
+    <Button
+        android:background="#ff8300"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:textSize="12dp"
+        android:text="Update"
+        android:layout_marginTop="10dp"
+        android:id="@+id/update_button"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/customer_id"
+        android:onClick="updateStatement" />
+
+    <Button
+        android:background="#ff8300"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:text="Clear Local DB"
+        android:layout_marginTop="10dp"
+        android:id="@+id/clear_button"
+        android:layout_below="@+id/customer_id"
+        android:layout_alignParentRight="true"
+        android:onClick="clearLocalStatement" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_button"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:id="@+id/statement_table"
+        android:layout_marginTop="10dp"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cell_shape"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/statement_column1"
+                android:id="@+id/textView7"
+                android:layout_column="0"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/statement_column2"
+                android:id="@+id/textView8"
+                android:layout_column="1"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/statement_column3"
+                android:id="@+id/textView9"
+                android:layout_column="2"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                />
+        </TableRow>
+    </TableLayout>
+
+
+
+</RelativeLayout>

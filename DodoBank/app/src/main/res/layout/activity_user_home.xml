@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.cysecurity.example.dodobank.UserHome"
+    android:clickable="true">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/user_home_welcome"
+        android:id="@+id/welcomeMessage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:background="#ff8300" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/account_number"
+        android:id="@+id/account_number"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:visibility="visible" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/logout"
+        android:text="Logout"
+        android:layout_below="@+id/welcomeMessage"
+        android:layout_alignRight="@+id/welcomeMessage"
+        android:layout_alignEnd="@+id/welcomeMessage"
+        android:drawableRight="@android:drawable/btn_dialog"
+        android:background="#eee"
+        android:textColor="#ff8500"
+        android:onClick="logout"
+        android:textStyle="bold"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_statement"
+        android:id="@+id/statement_button"
+        android:background="#ff8300"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:onClick="viewStatement"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Transfer_text"
+        android:id="@+id/transfer_button"
+        android:background="#ff8300"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/statement_button"
+        android:onClick="callTransferActivity" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_password"
+        android:id="@+id/change_password_button"
+        android:background="#ff8300"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/transfer_button"
+        android:layout_marginTop="10dp"
+       />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@mipmap/dodo_image"
+        android:layout_below="@+id/welcomeMessage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/app_name"
+        android:id="@+id/textView6"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/logout"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Balance: "
+        android:id="@+id/balance"
+        android:visibility="visible"
+        android:layout_below="@+id/account_number"
+        android:layout_alignLeft="@+id/account_number"
+        android:layout_alignStart="@+id/account_number" />
+
+
+
+</RelativeLayout>

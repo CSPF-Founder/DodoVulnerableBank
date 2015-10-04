@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">DodoBank</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_button">Login</string>
+    <string name="about_bank">Dodo went extinct. Easy to catch due to the fact it had no fear of humans.</string>
+    <string name="about_title">About Dodo</string>
+    <string name="server_text">Server :</string>
+    <string name="port_text">Port: </string>
+    <string name="server_button_text">Change</string>
+    <string name="server_address">10.0.2.2</string>
+    <string name="port_number">6060</string>
+    <string name="settings_filename">settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_user_home">UserHome</string>
+    <string name="user_home_welcome">Welcome</string>
+    <string name="view_statement">View Statement</string>
+    <string name="title_activity_statement">Statement</string>
+    <string name="Transfer_text">Transfer</string>
+    <string name="change_password">Change Password</string>
+    <string name="statement_column1">Sender</string>
+    <string name="statement_column2">Receiver</string>
+    <string name="statement_column3">Amount</string>
+    <string name="title_activity_transaction">TransactionActivity</string>
+    <string name="title_activity_do_transfer">DoTransfer</string>
+    <string name="account_balance">Balance</string>
+    <string name="account_number">Account Number</string>
+    <string name="title_activity_change_password">ChangePassword</string>
+    <string name="title_activity_password">PasswordActivity</string>
+</resources>
